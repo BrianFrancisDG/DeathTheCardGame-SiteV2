@@ -10,13 +10,14 @@
   /*grid-template-columns: 50% 50%;*/
   /*grid-column-gap: 3vh;*/
   grid-row-gap: 4vh;
-  padding: 7vh 7vh;
+  padding: 9vh 7vh;
   /* padding: 10vh; */
   justify-items: center;
   align-items: center;
   text-align: center;
   .blacklogo{
     height: 25vh;
+    padding-bottom: 9vh;
   }
   .headerText{
     padding-bottom: 10px;
@@ -33,6 +34,7 @@
   padding: 7vh 5vh;
   justify-items: center;
   align-items: center;
+
 }
 
 .border{
@@ -42,6 +44,24 @@
 .steps{
   font-weight: 700;
   color: black;
+
+}
+
+.oh{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 
