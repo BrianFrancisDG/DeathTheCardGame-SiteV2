@@ -20,6 +20,24 @@
   color: #af111c; }
 
 .headerDiv {
+  /*@media only screen and (max-width: 500px) and (max-height: 600px){
+    .headerDiv{
+      font-size: 2vh !important;
+    }
+    .blacklogo{
+      height: 15vh !important;
+    }
+  }
+
+  @media only screen and (min-width: 500px) and (min-height: 500px) and (max-width: 768px)
+  and (max-height: 768px){
+    .headerDiv{
+      font-size: 4vh !important;
+    }
+    .blacklogo{
+      height: 17vh !important;
+    }
+  }*/
   background-color: black;
   color: white;
   height: 70vh;
@@ -33,22 +51,39 @@
   justify-items: center;
   align-items: center;
   text-align: center; }
-  @media only screen and (max-width: 500px) {
-    .headerDiv .headerDiv {
-      font-size: 2vh !important; }
-    .headerDiv .blacklogo {
-      height: 15vh !important; } }
-  @media only screen and (min-width: 500px) and (max-width: 768px) {
-    .headerDiv .headerDiv {
-      font-size: 4vh !important; }
-    .headerDiv .blacklogo {
-      height: 17vh !important; } }
   .headerDiv .blacklogo {
     height: 25vh;
     padding-bottom: 9vh; }
   .headerDiv .headerText {
     padding-bottom: 10px; }
 
+@media screen and (max-width: 500px) {
+  .headerDiv {
+    font-size: 2vh !important;
+    padding: 0vh; }
+
+  .blacklogo {
+    height: 14vh !important;
+    padding: 0vh !important; }
+
+  .headerText {
+    padding: 0px; } }
+@media screen and (min-width: 500px) and (max-width: 900px) and (max-height: 768px) {
+  .headerDiv {
+    font-size: 4vh !important;
+    padding: 0vh; }
+
+  .blacklogo {
+    height: 17vh !important;
+    padding-bottom: 0px !important; }
+
+  .headerText {
+    padding: 0px;
+    font-size: 2vh; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .blacklogo {
+    height: 17vh !important;
+    padding: 0vh !important; } }
 .wrapper {
   background-color: #af111c;
   color: white;
@@ -113,8 +148,20 @@
   align-items: center;
   text-align: center; }
 
+.pic1 {
+  grid-area: pic1; }
+
+.pic2 {
+  grid-area: pic2; }
+
+.pic3 {
+  grid-area: pic4; }
+
+.pic4 {
+  grid-area: pic4; }
+
 .artworkDiv {
-  height: 80vh;
+  height: 90vh;
   display: grid;
   grid-template-rows: 10% 80% 10%;
   padding: 7vh 4vh;
@@ -124,44 +171,18 @@
   .artworkDiv .insta {
     padding-top: 4vh;
     height: 5vh; }
-
-.artRowOne {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 2vh;
-  padding: 7vh 4vh;
-  height: 55vh; }
-  @media only screen and (min-width: 500px) and (max-width: 768px) {
-    .artRowOne {
-      text-align: center !important;
-      display: grid !important;
-      grid-template-columns: repeat(2, 1fr) !important;
-      grid-column-gap: 2vh !important;
-      padding: 7vh 4vh !important;
-      height: 45vh !important; }
-      .artRowOne img {
-        max-width: 100% !important;
-        max-height: 100% !important; } }
-  @media only screen and (max-width: 500px) {
-    .artRowOne {
-      text-align: center !important;
-      display: grid !important;
-      grid-template-columns: repeat(1, 1fr) !important;
-      grid-column-gap: 2vh !important;
-      padding: 7vh 4vh !important;
-      height: 45vh !important; }
-      .artRowOne img {
-        max-width: 100% !important;
-        max-height: 100% !important; } }
-  .artRowOne img {
-    max-width: 100%;
-    max-height: 100%; }
-
-.artRowTwo {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  .artworkDiv .artText {
+    padding: 3vh; }
+  .artworkDiv .artRow {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2vh;
+    padding: 7vh 4vh;
+    height: 55vh; }
+    .artworkDiv .artRow img {
+      max-width: 100%;
+      max-height: 100%; }
 
 .socialmediadiv {
   background-color: #E0943C;
@@ -175,6 +196,20 @@
   justify-items: center;
   align-items: center;
   text-align: center; }
+  .socialmediadiv a {
+    text-decoration: none; }
+  .socialmediadiv i {
+    font-size: 10vh;
+    padding: 1vh;
+    float: left; }
+
+.mailing {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 2vh; }
 
 .logo {
   height: 10vh;
@@ -196,10 +231,5 @@ img {
 
 span {
   color: red; }
-
-nav {
-  background-color: black !important; }
-  nav a {
-    background-color: black !important; }
 
 /*# sourceMappingURL=index.css.map */
